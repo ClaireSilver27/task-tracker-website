@@ -568,3 +568,28 @@ body{
         width: 80px;
     }
 }
+@media screen and (max-width: 300px){
+    .taskSect .rightSect  .topRight .right .right1{
+        display: none;
+    }
+    .taskSect .rightSect  .bottomRight #entry{
+        width: 100%;
+        margin-left: 0px;
+        font-size: 10px;
+    }
+    .taskSect .rightSect  .bottomRight #timeEntry{
+        width: 45%;
+        margin-left: 0px;
+    }
+    .taskSect .rightSect  .bottomRight #dateEntry{
+        width: 45%;
+        margin-left: 10px;
+    }
+    .taskSect .rightSect  .bottomRight .Btn{
+        width: 80px;
+        margin-left: 0px;
+    }
+    #newItem{
+        font-size: 10px;
+    }
+}
