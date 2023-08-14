@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <link rel="stylesheet" href="./CSS/font-awesome.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="titleHold">
+            <i class="fa fa-th titleIC"></i>
+            <p class="title">Task Tracker</p>
+        </div>
+        <div class="inputHold">
+            <input type="text">
+            <i class="fa fa-search icon"></i>
+        </div>
+        <ul>
+            <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+            <li><a href="#"><i class="fa fa-user"></i></a></li>
+            <li><a href="#"><i class="fa fa-tags"></i></a></li>
+            <li><a href="#"><i class="fa fa-tasks"></i></a></li>
+        </ul>
+    </div>
+    <div class="taskSect">
+        <div class="sideNav">
+            <ul>
+                <li class="others"><i class="fa fa-align-justify"></i></li>
+                <li class="MyDay"><i class="fa fa-sun-o"></i>My Day</li>
+                <li class="others"><i class="fa fa-star-o"></i>Important</li>
+                <li class="others"><i class="fa fa-calendar"></i>Planned</li>
+                <li class="others"><i class="fa fa-user-o"></i>Assigned to me</li>
+                <li class="others"><i class="fa fa-home"></i>Tasks</li>
+                
+            </ul>
+            <hr class="line">
+            <div class="newlstHold">
+                <p class="newList">+    New List</p>
+                <i class="fa fa-pencil"></i>
+            </div>
+            <div class="endInfo">
+                Powered by Tasktracker@2022 
+            </div>
+        </div>
+        <div class="rightSect">
+            <div class="topRight">
+                <div class="left">
+                    <p class="dayGreet"><i class="fa fa-sun-o"></i>My Day</p>
+                    <p>Friday, August 11</p>
+                </div>
+                <div class="right">
+                    <div class="right1"><i class="fa fa-filter rightIC"></i> Filter</div>
+                    <div class="right1"><i class="fa fa-folder rightIC"></i> Group</div>
+                    <div class="right1"><i class="fa fa-lightbulb-o rightIC"></i> Solutions</div>
+                </div>
+            </div>
+            <div class="bottomRight">
+                <input type="text" name="entry" id="entry" placeholder="Enter any activity">
+                <input type="time" id="timeEntry">
+                <input type="date" id="dateEntry"><br>
+                <button class="Btn" onclick="addItem()">Add Task</button>
+                <!-- <button class="Btn" onclick="deleteItem()">Remove Task</button> -->
+                <p class="tasks">Your Tasks</p>
+                <ul id="outputList"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="#"><i class="fa fa-globe"></i>English (United States)</a></li>
+            <li><a href="#" id="footerIC">Site Map</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#" id="footerIC">Privacy</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#" id="footerIC">Trademarks</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#" id="footerIC">Task Tracker@2023</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const text = document.getElementById("entry");
+        const time = document.getElementById("timeEntry");
+        const date = document.getElementById("dateEntry");
+        const outputList = document.getElementById("outputList");
+        
+        function addItem(){
+    
+            const newItem = document.createElement("li");
+            const deleteBtn = document.createElement("button");
+            const btnText = document.createTextNode("Delete");
+            newItem.textContent= "Activity:" + "  " + text.value + "  " +"Time:"+ "  " + time.value +"  "+ "Date:" + "  " + date.value;
+            newItem.style.margin = '20px 10px';
+            newItem.style.display = 'flex';
+            newItem.style.justifyContent = 'space-between';
+            deleteBtn.style.width = '80px';
+            deleteBtn.style.height = '30px';
+            deleteBtn.style.padding = '5px';
+            deleteBtn.style.outline = 'none';
+            deleteBtn.style.border = 'none';
+            deleteBtn.style.borderRadius = '5px';
+            deleteBtn.style.backgroundColor = 'rgba(5, 75, 129, 0.6)';
+            
+
+            deleteBtn.addEventListener('mousemove', () => {
+                deleteBtn.style.backgroundColor = 'black';
+                deleteBtn.style.color = 'white';
+                deleteBtn.style.cursor = 'pointer';
+            })
+
+            deleteBtn.addEventListener('click', () => {
+                outputList.removeChild(newItem);
+            })
+
+            deleteBtn.appendChild(btnText);
+            newItem.append(deleteBtn)
+            outputList.appendChild(newItem);
+            
+            document.getElementById("entry").value = "";
+            document.getElementById("timeEntry").value = "";
+            document.getElementById("dateEntry").value = "";
+    
+        }
+    </script>
+    
+</body>
+</html>

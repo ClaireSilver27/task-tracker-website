@@ -1,0 +1,570 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(0, 120, 212);
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    justify-content: space-between;
+    font-family: sans-serif;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.681);
+}
+.navbar .titleHold{
+    display: flex;
+    align-items: center;
+}
+.navbar .titleIC{
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.navbar .title{
+    font-size: 16px;
+    color: white;
+}
+.navbar .inputHold{
+    width: 30%;
+    position: relative;
+}
+.navbar input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+}
+.navbar .icon{
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    color: rgba(0, 120, 212, 0.712);
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+.navbar ul li{
+    list-style: none;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    cursor: pointer;
+    color: rgb(52, 55, 61);
+    font-size: 22px;
+}
+.bannerSect {
+    width: 90%;
+    height: 80vh;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.bannerSect .welcomeIpad{
+    display: none;
+}
+.bannerSect .leftBanner{
+    width: auto;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+}
+.bannerSect .middleBanner{
+    width: auto;
+    height: 470px;
+    font-family: sans-serif;
+    color: rgb(52, 55, 61);
+    position: relative;
+}
+.bannerSect .middleBanner .logo{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+.bannerSect .middleBanner .logo .logoTitle{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.bannerSect .middleBanner a{
+    text-decoration: none;
+}
+.bannerSect .middleBanner a:hover{
+    cursor: pointer;
+}
+.bannerSect .middleBanner .pgLinkHold{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+}
+.bannerSect .middleBanner .pgLink{
+    width: 130px;
+    height: 40px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: rgb(0, 120, 212);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.681);
+}
+.bannerSect .middleBanner .pgLink:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.bannerSect .middleBanner .learn{
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.bannerSect .middleBanner .learn a {
+    color: rgb(0, 120, 212);
+}
+.bannerSect .middleBanner .downloadBtn{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.bannerSect .middleBanner .btnHold{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+    margin: auto;
+}
+.bannerSect .middleBanner .btnHold .IC1{
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgb(52, 55, 61);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.bannerSect .middleBanner .btnHold .IC1 i{
+    color: rgb(52, 55, 61);
+}
+.bannerSect .middleBanner .btnHold .IC1:hover{
+    background-color: rgba(0, 120, 212, 0.559);
+    border: none;
+}
+.bannerSect .middleBanner .terms{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+    color: rgb(52, 55, 61);
+}
+.bannerSect .rightBanner{
+    width: auto;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    width: 100%;
+    padding: 10px;
+    height: 60px;
+    background-color: rgb(242, 242, 242);
+}
+.footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 12px;
+}
+.footer ul li{
+    list-style: none;
+}
+.footer ul li a{
+    font-size: 13px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgb(52, 55, 61);
+}
+.footer ul li a:hover{
+    font-weight: bold;
+}
+.footer ul li a i{
+    margin-right: 5px;
+}
+/* TO DO PAGE */
+.taskSect{
+    margin: 50px auto;
+    width: 95%;
+    height: 750px;
+    border-radius: 20px;
+    background-color: rgba(41, 40, 40, 0.386);
+    display: grid;
+    grid-template-columns: 0.7fr 2fr;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.681);
+}
+.taskSect .sideNav{
+    font-family: sans-serif;
+    color: rgb(52, 55, 61);
+    width: auto;
+    height: auto;
+    background-color: white;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.taskSect .sideNav ul{
+    margin-top: 20px;
+}
+.taskSect .sideNav ul li{
+    font-size: 15px;
+    list-style: none;
+    margin-bottom: 30px;
+}
+.taskSect .sideNav ul li i{
+    margin-right: 20px;
+    font-size: 20px;
+}
+.taskSect .sideNav ul .others{
+    margin-left: 20px;
+}
+.taskSect .sideNav ul .others:hover{
+    cursor: pointer;
+    color: rgb(0, 120, 212);
+    width: 90%;
+}
+.taskSect .sideNav ul .MyDay{
+    background-color: rgba(186, 214, 235, 0.546);
+    border-left: 2px solid rgb(0, 120, 212);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.taskSect .sideNav ul .MyDay:hover{
+    cursor: pointer;
+}
+.taskSect .sideNav .line{
+    margin: 0 20px;
+    /* border: 1px solid rgb(52, 55, 61); */
+}
+.taskSect .sideNav .newlstHold{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(0, 120, 212);
+    font-size: 15px;
+}
+.taskSect .sideNav .newlstHold:hover{
+    cursor: pointer;
+    color: rgb(52, 55, 61);
+}
+
+.taskSect .sideNav .endInfo{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 12px;
+}
+.taskSect .rightSect{
+    font-family: sans-serif;
+    color: rgb(52, 55, 61);
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.taskSect .rightSect  .topRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.taskSect .rightSect  .topRight .left .dayGreet{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.taskSect .rightSect  .topRight .left p i{
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.taskSect .rightSect  .topRight .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.taskSect .rightSect  .topRight .right .right1{
+    font-size: 15px;
+    margin-left: 30px;
+}
+.taskSect .rightSect  .topRight .right .right1:hover{
+    cursor: pointer;
+}
+.taskSect .rightSect  .topRight .right .right1 .rightIC{
+    margin-right: 5px;
+    font-size: 20px;
+}
+.taskSect .rightSect  .bottomRight{
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.681);
+}
+.taskSect .rightSect  .bottomRight #entry{
+    width: 52%;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.233);
+    margin-bottom: 20px;
+}
+.taskSect .rightSect  .bottomRight #timeEntry{
+    width: 20%;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, 0.233);
+    margin-bottom: 20px;
+}
+.taskSect .rightSect  .bottomRight #dateEntry{
+    width: 20%;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, 0.233);
+    margin-bottom: 20px;
+}
+.taskSect .rightSect  .bottomRight .Btn{
+    width: 12%;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: rgba(5, 75, 129, 0.6);
+}
+.taskSect .rightSect  .bottomRight .Btn:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.taskSect .rightSect  .bottomRight .tasks{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(52, 55, 61);
+    color: rgb(52, 55, 61);
+}
+/* media queries */
+/* Ipad Air */
+@media screen and (max-width: 1025px){
+    /* HOME PAGE */
+    .navbar{
+        height: 70px;
+    }
+    .bannerSect {
+        grid-template-columns: 1fr;
+    }
+    .bannerSect .welcomeIpad{
+        display: block;
+        margin: 50px auto;
+        width: 50%;
+        height: 250px;
+    }
+    .bannerSect .leftBanner{
+        display: none;
+    }
+    .bannerSect .rightBanner{
+        display: none;
+    }
+    .bannerSect .middleBanner{
+        margin-top: 120px;
+        height: auto;
+    }
+    .bannerSect .middleBanner .logo{
+        margin-top: 20px;
+    }
+    .bannerSect .middleBanner .downloadBtn{
+        margin-bottom: 30px;
+    }
+    .bannerSect .middleBanner .btnHold .IC1{
+        width: 50px;
+        height: 50px;
+    }
+    .taskSect{
+        height: 950px;
+        grid-template-columns: 0.3fr 0.7fr;
+    }
+    .taskSect .rightSect  .bottomRight .Btn{
+        width: 15%;
+    }
+}
+/* Ipad mini */
+@media screen and (max-width: 780px){
+    .bannerSect .middleBanner{
+        margin-top: 50px;
+    }
+}
+/* mobile view */
+@media screen and (max-width: 600px){
+    .navbar{
+        padding: 0 20px;
+        height: 60px;
+    }
+    .navbar .titleIC{
+        font-size: 15px;
+    }
+    .navbar .inputHold{
+        display: none;
+    }
+    .navbar ul li{
+        margin-left: 20px;
+        font-size: 15px;
+    }
+    .bannerSect .middleBanner{
+        margin-top: 10px;
+        height: auto;
+    }
+    .bannerSect .middleBanner .logo{
+        margin-top: 0px;
+    }
+    .bannerSect .middleBanner .logo .desc{
+        margin-top: -120px;
+    }
+    .bannerSect .welcomeIpad{
+        margin: 50px auto;
+    }
+    .bannerSect .middleBanner .downloadBtn{
+        margin-bottom: 30px;
+    }
+    .bannerSect .middleBanner .btnHold{
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .bannerSect .middleBanner .btnHold .IC1{
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+    .footer{
+        padding: 5px;
+    }
+    .footer ul li #footerIC{
+        display: none;
+    }
+    .footer ul li a{
+        font-size: 10px;
+    }
+    .taskSect{
+        grid-template-columns: 1fr;
+        height: 750px;
+    }
+    .taskSect .sideNav{
+        display: none;
+    }
+    .taskSect .rightSect  .topRight .left .dayGreet{
+        font-size: 13px;
+    }
+    .taskSect .rightSect  .topRight .left p{
+        font-size: 13px;
+    }
+    .taskSect .rightSect  .topRight .left p i{
+        font-size: 13px;
+    }
+    .taskSect .rightSect  .topRight .right .right1{
+        font-size: 13px;
+        margin-left: 15px;
+    }
+    .taskSect .rightSect  .topRight .right .right1 .rightIC{
+        margin-right: 5px;
+        font-size: 10px;
+    }
+    .taskSect .rightSect  .bottomRight #entry{
+        width: 50%;
+    }
+    .taskSect .rightSect  .bottomRight #timeEntry{
+        width: 20%;
+    }
+    .taskSect .rightSect  .bottomRight #dateEntry{
+        width: 20%;
+    }
+    .taskSect .rightSect  .bottomRight .Btn{
+        width: 80px;
+    }
+}
+/* for smaller devices */
+@media screen and (max-width: 385px){
+    .bannerSect .middleBanner .logo .logoTitle{
+        font-size: 25px;
+    }
+    .bannerSect .middleBanner .logo .desc{
+        margin-top: -180px;
+        font-size: 13px;
+    }
+    .bannerSect .middleBanner .pgLink{
+        font-size: 13px;
+    }
+    .bannerSect .middleBanner .learn{
+        font-size: 13px;
+    }
+    .bannerSect .middleBanner .downloadBtn{
+        font-size: 13px;
+    }
+    .bannerSect .middleBanner .btnHold{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    .bannerSect .middleBanner .btnHold .IC1{
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+    .bannerSect .middleBanner .terms{
+        font-size: 11px;
+    }
+    .taskSect .rightSect  .bottomRight #entry{
+        width: 45%;
+    }
+    .taskSect .rightSect  .bottomRight #timeEntry{
+        width: 22%;
+    }
+    .taskSect .rightSect  .bottomRight #dateEntry{
+        width: 22%;
+    }
+    .taskSect .rightSect  .bottomRight .Btn{
+        width: 80px;
+    }
+}
