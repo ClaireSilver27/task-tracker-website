@@ -1,5 +1,7 @@
 # 📋 Task Tracker  
 
+<br> 
+
 ## 📖 Overview  
 Task Tracker is a lightweight, intuitive web app designed to help users manage their daily tasks efficiently.
 
@@ -21,7 +23,7 @@ Task Tracker is a lightweight, intuitive web app designed to help users manage t
 ---
 
 ## 🚀 Live Demo  
-🔗 [View Task Tracker Live](https://rejiz-task-tracker.netlify.app/)
+🔗 [Task Tracker](https://rejiz-task-tracker.netlify.app/)
 
 ---
 
