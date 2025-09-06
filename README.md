@@ -28,7 +28,7 @@ Task Tracker is a lightweight, intuitive web app designed to help users manage t
 ---
 
 ## 📸 Screenshots  
-<img width="562" height="812" alt="T1" src="https://github.com/user-attachments/assets/94dedd58-c164-4e5c-bfd3-186e7b1e0e89" /> <img width="366" height="807" alt="T2" src="https://github.com/user-attachments/assets/fab950b0-47f7-42d8-b94a-eac255bab6ec" />
+<img width="492" height="820" alt="T11" src="https://github.com/user-attachments/assets/47635f56-1807-45ad-ba2d-4307c105d4ab" /> <img width="366" height="807" alt="T2" src="https://github.com/user-attachments/assets/fab950b0-47f7-42d8-b94a-eac255bab6ec" />
 
 ```markdown
 
